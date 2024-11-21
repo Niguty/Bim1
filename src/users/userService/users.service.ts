@@ -11,12 +11,14 @@ export class UsersService {
       username: 'jonh',
       password: 'changeme',
       email: 'jonh@example.com',
+      roles: []
     },
     {
       UserId: 2,
       username: 'maria',
       password: 'guess',
       email: 'maria@example.com',
+      roles: []
     },
   ];
 
@@ -26,6 +28,7 @@ export class UsersService {
       username: createUserDto.username,
       password: createUserDto.password,
       email: createUserDto.email,
+      roles: createUserDto.roles
     };
 
     this.users.push(newUser);

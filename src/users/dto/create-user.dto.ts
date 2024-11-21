@@ -1,4 +1,5 @@
 import { IsNotEmpty, IsString } from "class-validator";
+import { Role } from "../guard/role.enum";
 
 export class CreateUserDto {
 
@@ -13,4 +14,6 @@ export class CreateUserDto {
     @IsString()
     @IsNotEmpty()
     password: string;
+
+    roles: Role[]; 
 }
